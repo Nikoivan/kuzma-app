@@ -6,8 +6,8 @@
         <entry key="IAC">
           <value>
             <list>
-              <option value="dbac1539-39c0-47b0-b355-c6981ba58c9f" />
-              <option value="5db7f775-b331-4274-b887-eb06e72c62ac" />
+              <option value="98ad51d3-60c1-410d-9e16-b2353f3c578b" />
+              <option value="2efd6079-5bf3-4a68-b8dd-32bf5a7d06bb" />
             </list>
           </value>
         </entry>
@@ -48,8 +48,8 @@
         <entry key="C:\projects\my\kuzma-app\Dockerfile">
           <value>
             <list>
-              <option value="dbac1539-39c0-47b0-b355-c6981ba58c9f" />
-              <option value="5db7f775-b331-4274-b887-eb06e72c62ac" />
+              <option value="98ad51d3-60c1-410d-9e16-b2353f3c578b" />
+              <option value="2efd6079-5bf3-4a68-b8dd-32bf5a7d06bb" />
             </list>
           </value>
         </entry>
@@ -57,7 +57,7 @@
     </option>
     <option name="results">
       <map>
-        <entry key="5db7f775-b331-4274-b887-eb06e72c62ac">
+        <entry key="2efd6079-5bf3-4a68-b8dd-32bf5a7d06bb">
           <value>
             <ScanResult>
               <option name="codeAnnotation">
@@ -147,7 +147,7 @@
                     <value>
                       <ScanResultCodeAnnotation>
                         <option name="row" value="10" />
-                        <option name="text" value="RUN npx prisma generate &amp;&amp; npx prisma migrate deploy &amp;&amp; npm run build" />
+                        <option name="text" value="RUN npm run build" />
                         <option name="displayType" value="INFO" />
                       </ScanResultCodeAnnotation>
                     </value>
@@ -298,16 +298,16 @@
                   </entry>
                 </map>
               </option>
-              <option name="originalResult" value="{&quot;check_id&quot;:&quot;CKV_DOCKER_3&quot;,&quot;bc_check_id&quot;:null,&quot;check_name&quot;:&quot;Ensure that a user for the container has been created&quot;,&quot;code_block&quot;:[[1,&quot;FROM node:24-alpine AS deps\n&quot;],[2,&quot;WORKDIR /app\n&quot;],[3,&quot;COPY package*.json ./\n&quot;],[4,&quot;RUN npm install --legacy-peer-deps\n&quot;],[5,&quot;\n&quot;],[6,&quot;FROM node:24-alpine AS builder\n&quot;],[7,&quot;WORKDIR /app\n&quot;],[8,&quot;COPY --from=deps /app/node_modules ./node_modules\n&quot;],[9,&quot;COPY . .\n&quot;],[10,&quot;RUN npx prisma generate \u0026\u0026 npx prisma migrate deploy \u0026\u0026 npm run build\n&quot;],[11,&quot;\n&quot;],[12,&quot;FROM node:24-alpine AS runner\n&quot;],[13,&quot;WORKDIR /app\n&quot;],[14,&quot;\n&quot;],[15,&quot;ENV NODE_ENV=production\n&quot;],[16,&quot;ENV PORT=3000\n&quot;],[17,&quot;\n&quot;],[18,&quot;COPY --from=builder /app ./\n&quot;],[19,&quot;\n&quot;],[20,&quot;RUN addgroup --system --gid 1001 nodejs\n&quot;],[21,&quot;RUN adduser --system --uid 1001 nextjs\n&quot;],[22,&quot;RUN chown -R nextjs:nodejs /app\n&quot;],[23,&quot;\n&quot;],[24,&quot;EXPOSE 3000\n&quot;],[25,&quot;\n&quot;],[26,&quot;CMD [\&quot;npm\&quot;, \&quot;start\&quot;]&quot;]],&quot;file_abs_path&quot;:&quot;C:\\projects\\my\\kuzma-app\\Dockerfile&quot;,&quot;repo_file_path&quot;:&quot;/Dockerfile&quot;,&quot;file_line_range&quot;:[1,26],&quot;resource&quot;:&quot;/Dockerfile.&quot;,&quot;description&quot;:null,&quot;short_description&quot;:null,&quot;check_result&quot;:{&quot;evaluated_keys&quot;:null,&quot;inspected_key&quot;:&quot;&quot;}}" />
+              <option name="originalResult" value="{&quot;check_id&quot;:&quot;CKV_DOCKER_3&quot;,&quot;bc_check_id&quot;:null,&quot;check_name&quot;:&quot;Ensure that a user for the container has been created&quot;,&quot;code_block&quot;:[[1,&quot;FROM node:24-alpine AS deps\n&quot;],[2,&quot;WORKDIR /app\n&quot;],[3,&quot;COPY package*.json ./\n&quot;],[4,&quot;RUN npm install --legacy-peer-deps\n&quot;],[5,&quot;\n&quot;],[6,&quot;FROM node:24-alpine AS builder\n&quot;],[7,&quot;WORKDIR /app\n&quot;],[8,&quot;COPY --from=deps /app/node_modules ./node_modules\n&quot;],[9,&quot;COPY . .\n&quot;],[10,&quot;RUN npm run build\n&quot;],[11,&quot;\n&quot;],[12,&quot;FROM node:24-alpine AS runner\n&quot;],[13,&quot;WORKDIR /app\n&quot;],[14,&quot;\n&quot;],[15,&quot;ENV NODE_ENV=production\n&quot;],[16,&quot;ENV PORT=3000\n&quot;],[17,&quot;\n&quot;],[18,&quot;COPY --from=builder /app ./\n&quot;],[19,&quot;\n&quot;],[20,&quot;RUN addgroup --system --gid 1001 nodejs\n&quot;],[21,&quot;RUN adduser --system --uid 1001 nextjs\n&quot;],[22,&quot;RUN chown -R nextjs:nodejs /app\n&quot;],[23,&quot;\n&quot;],[24,&quot;EXPOSE 3000\n&quot;],[25,&quot;\n&quot;],[26,&quot;CMD [\&quot;npm\&quot;, \&quot;start\&quot;]&quot;]],&quot;file_abs_path&quot;:&quot;C:\\projects\\my\\kuzma-app\\Dockerfile&quot;,&quot;repo_file_path&quot;:&quot;/Dockerfile&quot;,&quot;file_line_range&quot;:[1,26],&quot;resource&quot;:&quot;C:/projects/my/kuzma-app/Dockerfile.&quot;,&quot;description&quot;:null,&quot;short_description&quot;:null,&quot;check_result&quot;:{&quot;evaluated_keys&quot;:null,&quot;inspected_key&quot;:&quot;&quot;}}" />
               <option name="suppressible" value="true" />
-              <option name="id" value="5db7f775-b331-4274-b887-eb06e72c62ac" />
+              <option name="id" value="2efd6079-5bf3-4a68-b8dd-32bf5a7d06bb" />
               <option name="category" value="IAC" />
               <option name="framework" value="DOCKERFILE" />
               <option name="checkId" value="CKV_DOCKER_3" />
               <option name="checkName" value="Ensure that a user for the container has been created" />
               <option name="resultName" value="Ensure that a user for the container has been created" />
               <option name="popupTitle" value="Ensure that a user for the container has been created" />
-              <option name="resource" value="/Dockerfile." />
+              <option name="resource" value="$PROJECT_DIR$/Dockerfile." />
               <option name="lineRange">
                 <Range>
                   <option name="end" value="26" />
@@ -325,7 +325,7 @@
             </ScanResult>
           </value>
         </entry>
-        <entry key="dbac1539-39c0-47b0-b355-c6981ba58c9f">
+        <entry key="98ad51d3-60c1-410d-9e16-b2353f3c578b">
           <value>
             <ScanResult>
               <option name="codeAnnotation">
@@ -415,7 +415,7 @@
                     <value>
                       <ScanResultCodeAnnotation>
                         <option name="row" value="10" />
-                        <option name="text" value="RUN npx prisma generate &amp;&amp; npx prisma migrate deploy &amp;&amp; npm run build" />
+                        <option name="text" value="RUN npm run build" />
                         <option name="displayType" value="INFO" />
                       </ScanResultCodeAnnotation>
                     </value>
@@ -566,16 +566,16 @@
                   </entry>
                 </map>
               </option>
-              <option name="originalResult" value="{&quot;check_id&quot;:&quot;CKV_DOCKER_2&quot;,&quot;bc_check_id&quot;:null,&quot;check_name&quot;:&quot;Ensure that HEALTHCHECK instructions have been added to container images&quot;,&quot;code_block&quot;:[[1,&quot;FROM node:24-alpine AS deps\n&quot;],[2,&quot;WORKDIR /app\n&quot;],[3,&quot;COPY package*.json ./\n&quot;],[4,&quot;RUN npm install --legacy-peer-deps\n&quot;],[5,&quot;\n&quot;],[6,&quot;FROM node:24-alpine AS builder\n&quot;],[7,&quot;WORKDIR /app\n&quot;],[8,&quot;COPY --from=deps /app/node_modules ./node_modules\n&quot;],[9,&quot;COPY . .\n&quot;],[10,&quot;RUN npx prisma generate \u0026\u0026 npx prisma migrate deploy \u0026\u0026 npm run build\n&quot;],[11,&quot;\n&quot;],[12,&quot;FROM node:24-alpine AS runner\n&quot;],[13,&quot;WORKDIR /app\n&quot;],[14,&quot;\n&quot;],[15,&quot;ENV NODE_ENV=production\n&quot;],[16,&quot;ENV PORT=3000\n&quot;],[17,&quot;\n&quot;],[18,&quot;COPY --from=builder /app ./\n&quot;],[19,&quot;\n&quot;],[20,&quot;RUN addgroup --system --gid 1001 nodejs\n&quot;],[21,&quot;RUN adduser --system --uid 1001 nextjs\n&quot;],[22,&quot;RUN chown -R nextjs:nodejs /app\n&quot;],[23,&quot;\n&quot;],[24,&quot;EXPOSE 3000\n&quot;],[25,&quot;\n&quot;],[26,&quot;CMD [\&quot;npm\&quot;, \&quot;start\&quot;]&quot;]],&quot;file_abs_path&quot;:&quot;C:\\projects\\my\\kuzma-app\\Dockerfile&quot;,&quot;repo_file_path&quot;:&quot;/Dockerfile&quot;,&quot;file_line_range&quot;:[1,26],&quot;resource&quot;:&quot;/Dockerfile.&quot;,&quot;description&quot;:null,&quot;short_description&quot;:null,&quot;check_result&quot;:{&quot;evaluated_keys&quot;:null,&quot;inspected_key&quot;:&quot;&quot;}}" />
+              <option name="originalResult" value="{&quot;check_id&quot;:&quot;CKV_DOCKER_2&quot;,&quot;bc_check_id&quot;:null,&quot;check_name&quot;:&quot;Ensure that HEALTHCHECK instructions have been added to container images&quot;,&quot;code_block&quot;:[[1,&quot;FROM node:24-alpine AS deps\n&quot;],[2,&quot;WORKDIR /app\n&quot;],[3,&quot;COPY package*.json ./\n&quot;],[4,&quot;RUN npm install --legacy-peer-deps\n&quot;],[5,&quot;\n&quot;],[6,&quot;FROM node:24-alpine AS builder\n&quot;],[7,&quot;WORKDIR /app\n&quot;],[8,&quot;COPY --from=deps /app/node_modules ./node_modules\n&quot;],[9,&quot;COPY . .\n&quot;],[10,&quot;RUN npm run build\n&quot;],[11,&quot;\n&quot;],[12,&quot;FROM node:24-alpine AS runner\n&quot;],[13,&quot;WORKDIR /app\n&quot;],[14,&quot;\n&quot;],[15,&quot;ENV NODE_ENV=production\n&quot;],[16,&quot;ENV PORT=3000\n&quot;],[17,&quot;\n&quot;],[18,&quot;COPY --from=builder /app ./\n&quot;],[19,&quot;\n&quot;],[20,&quot;RUN addgroup --system --gid 1001 nodejs\n&quot;],[21,&quot;RUN adduser --system --uid 1001 nextjs\n&quot;],[22,&quot;RUN chown -R nextjs:nodejs /app\n&quot;],[23,&quot;\n&quot;],[24,&quot;EXPOSE 3000\n&quot;],[25,&quot;\n&quot;],[26,&quot;CMD [\&quot;npm\&quot;, \&quot;start\&quot;]&quot;]],&quot;file_abs_path&quot;:&quot;C:\\projects\\my\\kuzma-app\\Dockerfile&quot;,&quot;repo_file_path&quot;:&quot;/Dockerfile&quot;,&quot;file_line_range&quot;:[1,26],&quot;resource&quot;:&quot;C:/projects/my/kuzma-app/Dockerfile.&quot;,&quot;description&quot;:null,&quot;short_description&quot;:null,&quot;check_result&quot;:{&quot;evaluated_keys&quot;:null,&quot;inspected_key&quot;:&quot;&quot;}}" />
               <option name="suppressible" value="true" />
-              <option name="id" value="dbac1539-39c0-47b0-b355-c6981ba58c9f" />
+              <option name="id" value="98ad51d3-60c1-410d-9e16-b2353f3c578b" />
               <option name="category" value="IAC" />
               <option name="framework" value="DOCKERFILE" />
               <option name="checkId" value="CKV_DOCKER_2" />
               <option name="checkName" value="Ensure that HEALTHCHECK instructions have been added to container images" />
               <option name="resultName" value="Ensure that HEALTHCHECK instructions have been added to container images" />
               <option name="popupTitle" value="Ensure that HEALTHCHECK instructions have been added to container images" />
-              <option name="resource" value="/Dockerfile." />
+              <option name="resource" value="$PROJECT_DIR$/Dockerfile." />
               <option name="lineRange">
                 <Range>
                   <option name="end" value="26" />
