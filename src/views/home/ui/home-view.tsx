@@ -51,10 +51,10 @@ export const HomeView: FC = async () => (
   <div className='min-h-screen bg-white font-sans text-slate-900 selection:bg-[#8da332] selection:text-white'>
     <header className='relative w-full h-screen min-h-[600px] flex flex-col'>
       <Image
-        className={'absolute h-screen w-full z-1 object-cover object-center'}
+        className={'absolute h-screen w-full z-1 object-cover object-bottom'}
         src={bgSrc}
-        width={100}
-        height={100}
+        width={1000}
+        height={1000}
         alt='Spitsa Bike Camp'
       />
       <nav className='relative z-10 flex justify-between items-center p-6 container mx-auto'>
@@ -168,8 +168,8 @@ export const HomeView: FC = async () => (
           className='w-full'
           src={mountainSrc}
           alt='Spitsa Bike Camp'
-          width={100}
-          height={100}
+          width={1000}
+          height={1000}
         />
       </div>
     </section>
@@ -190,8 +190,8 @@ export const HomeView: FC = async () => (
               </span>
               <Image
                 src={secondRiderSrc}
-                width={100}
-                height={100}
+                width={1000}
+                height={1000}
                 alt='Instructor 1'
                 className='w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500'
               />
@@ -218,8 +218,8 @@ export const HomeView: FC = async () => (
               </span>
               <Image
                 src={firstRiderSrc}
-                width={100}
-                height={100}
+                width={1000}
+                height={1000}
                 alt='Instructor 1'
                 className='w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500'
               />
@@ -246,8 +246,8 @@ export const HomeView: FC = async () => (
               </span>
               <Image
                 src={secondRiderSrc}
-                width={100}
-                height={100}
+                width={1000}
+                height={1000}
                 alt='Instructor 1'
                 className='w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500'
               />
@@ -286,8 +286,8 @@ export const HomeView: FC = async () => (
         <div className='relative max-w-md mx-auto aspect-[4/5] overflow-hidden rounded-lg group cursor-pointer'>
           <Image
             src={mergeSrc}
-            width={100}
-            height={100}
+            width={1000}
+            height={1000}
             alt='Мерч'
             className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-105'
           />
@@ -312,8 +312,8 @@ export const HomeView: FC = async () => (
           <div className='absolute inset-0'>
             <Image
               src={formBgSrc}
-              width={100}
-              height={100}
+              width={1000}
+              height={1000}
               alt='Форма заявки'
               className='w-full h-full object-cover'
             />
